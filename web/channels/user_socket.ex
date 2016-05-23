@@ -2,7 +2,7 @@ defmodule SimpleElm.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "rooms:*", SimpleElm.RoomChannel
+  channel "editor:*", SimpleElm.EditorChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
